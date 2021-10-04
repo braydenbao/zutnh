@@ -1,0 +1,2666 @@
+a,
+.transition,
+.head dl.btn dd.search,
+.head dl.btn dd.search .input,
+.footFollow li .layer,
+.recruit .list li .name,
+.recruit .list li .name:after,
+ :before,
+img,
+.nav {
+    transition: All 0.5s ease;
+    -webkit-transition: All 0.5s ease;
+    -moz-transition: All 0.5s ease;
+    -o-transition: All 0.5s ease;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.flex,
+.head dl.btn,
+.head dl.btn a,
+.footFollow ul,
+.indexFlash .dots,
+.indexPart2 .dots,
+.pageNum div,
+.pageBanner2 .wal,
+.pageBanner2 .list,
+.news_01 .arrow,
+.teaching_01 .title,
+.teaching_01 .title2,
+.teaching_01 .list li,
+.links .title,
+.research_02 .title,
+.character .tab ul,
+.characterShow .title,
+.recruit .title {
+    display: flex;
+    display: -webkit-flex;
+}
+
+.flexColumn,
+.character .tab li {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+}
+
+.itemsCenter,
+.head dl.btn,
+.head dl.btn a,
+.pageBanner2 .wal,
+.characterShow .title {
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.justifyCenter,
+.footFollow ul,
+.indexFlash .dots,
+.indexPart2 .dots,
+.pageNum div {
+    justify-content: center;
+    -webkit-justify-content: center;
+}
+
+.flexAround {
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+}
+
+.flexBetween,
+.news_01 .arrow {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+}
+
+.flexWrap,
+.nav ul,
+.foot .list ul,
+.news_02 .list ul,
+.character .list ul {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font-size: 12px;
+    font-family: Arial, "Noto Serif SC", serif;
+    color: #333;
+    -webkit-text-size-adjust: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+a:active {
+    star: expression(this.onFocus=this.blur());
+}
+
+a:link {
+    text-decoration: none;
+    outline: none;
+}
+
+a:visited {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #024a85;
+    outline: none;
+}
+
+li {
+    list-style: outside none;
+}
+
+h1 {
+    font-size: 16px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-size: 14px;
+}
+
+h5 {
+    font-size: 12px;
+}
+
+textarea,
+input {
+    background: transparent;
+    font-size: 12px;
+    font-family: Arial, "Noto Serif SC", serif;
+    color: #888;
+    outline: none;
+    border: 0;
+}
+
+em {
+    font-style: normal;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    border: 0;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    display: block;
+    _display: inherit;
+}
+
+.before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.h10 {
+    height: 0.1rem;
+    overflow: hidden;
+    clear: both;
+}
+
+.h50 {
+    height: 0.5rem;
+    overflow: hidden;
+    clear: both;
+}
+
+.wal {
+    max-width: 14rem;
+    margin: 0 auto;
+}
+
+.phoneShow {
+    display: none;
+}
+
+@font-face {
+    font-family: 'Candara';
+    src: url("fonts/Candara.eot");
+    src: url("fonts/Candara.eot") format("embedded-opentype"), url("fonts/Candara.woff2") format("woff2"), url("fonts/Candara.woff") format("woff"), url("fonts/Candara.ttf") format("truetype"), url("fonts/Candara.svg#Candara") format("svg");
+}
+
+.tab li {
+    cursor: pointer;
+}
+
+.tabContent {
+    display: none;
+}
+
+.headD {
+    height: 1.3rem;
+}
+
+.head {
+    position: absolute;
+    z-index: 50;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background: #fff;
+}
+
+.head .wal {
+    height: 1.3rem;
+    position: relative;
+}
+
+.head a.logo {
+    display: block;
+    background: url("../images/logo.jpg") center no-repeat;
+    background-size: 100%;
+    height: 100%;
+    width: 5rem;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: auto;
+    top: 25px;
+    bottom: auto;
+}
+
+.head dl.btn {
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: -0.1rem;
+    top: 0.3rem;
+    bottom: auto;
+}
+
+.head dl.btn dd {
+    padding: 0 .06rem;
+    border-right: #cbcbcb solid 1px;
+}
+
+.head dl.btn a {
+    height: .16rem;
+    line-height: .16rem;
+    padding: 0 .1rem;
+    font-size: .14rem;
+    color: #898989;
+}
+
+.head dl.btn a.on,
+.head dl.btn a:hover {
+    color: #fff;
+    background: #333;
+}
+
+.head dl.btn dd.search {
+    width: .14rem;
+    height: .16rem;
+    background: url("../image/nimg14.png") right center no-repeat;
+    background-size: .14rem;
+    position: relative;
+    border: 0;
+    margin-left: .16rem;
+}
+
+.head dl.btn dd.search .submit {
+    width: .34rem;
+    height: .36rem;
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: -0.1rem;
+    top: -0.1rem;
+    bottom: auto;
+}
+
+.head dl.btn dd.search .submit input {
+    width: 100%;
+    height: .36rem;
+    cursor: pointer;
+}
+
+.head dl.btn dd.search .input {
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 0;
+    top: -0.1rem;
+    bottom: auto;
+    width: 100%;
+    height: .34rem;
+    border-bottom: #333 solid 1px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.head dl.btn dd.search .input input {
+    width: 100%;
+    height: .35rem;
+    line-height: .35rem;
+    font-size: .12rem;
+}
+
+.head dl.btn dd.search.on {
+    width: 1.6rem;
+}
+
+.head dl.btn dd.search.on .input {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav {
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: -0.12rem;
+    top: auto;
+    bottom: 0;
+}
+
+.nav li {
+    margin-left: .2rem;
+}
+
+.nav li a {
+    display: block;
+    padding: .15rem .12rem .38rem .12rem;
+    position: relative;
+    font-size: .18rem;
+    color: #000;
+}
+
+.nav li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: .03rem;
+    background: #000;
+}
+
+.nav li a:hover:before,
+.nav li a.on:before {
+    left: 0;
+    width: 100%;
+}
+
+.foot {
+    background: url("../images/3b98blnle2.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.foot:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .7rem;
+    background: rgba(0, 0, 0, 0.76);
+}
+
+.foot a {
+    color: #fff;
+}
+
+.foot .wal {
+    min-height: 6.46rem;
+    position: relative;
+}
+
+.foot .logo {
+    padding: .8rem 0 .35rem 0;
+}
+
+.foot .logo div {
+    padding-bottom: .15rem;
+}
+
+.foot .logo img {
+    height: .4rem;
+}
+
+.foot .box h5 {
+    font-weight: 400;
+    font-size: .16rem;
+    opacity: .6;
+    padding-bottom: .15rem;
+}
+
+.foot .box .content {
+    font-size: .12rem;
+    line-height: .18rem;
+    opacity: .4;
+}
+
+.foot .list {
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 0;
+    top: 0.82rem;
+    bottom: auto;
+    width: 9.3rem;
+}
+
+.foot .list:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -1rem;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.foot .list li {
+    width: 33.333%;
+    padding-left: 1.4rem;
+    position: relative;
+    line-height: .24rem;
+    padding-bottom: .4rem;
+}
+
+.foot .list li h5 {
+    position: absolute;
+    z-index: 10;
+    left: 0.55rem;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    font-weight: 400;
+    font-size: .18rem;
+}
+
+.foot .list li dd {
+    font-size: .12rem;
+}
+
+.foot .msg {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: auto;
+    top: auto;
+    bottom: 0;
+    width: 100%;
+    line-height: .7rem;
+    opacity: .34;
+    font-size: .12rem;
+}
+
+.footFollow {
+    text-align: center;
+    background: url("../image/img371.png") center bottom no-repeat;
+    background-size: 3.71rem;
+}
+
+.footFollow .title {
+    font-size: .16rem;
+    line-height: .6rem;
+}
+
+.footFollow .title em {
+    padding: 0 .08rem;
+}
+
+.footFollow li {
+    height: 1.08rem;
+    padding-top: .3rem;
+    width: .56rem;
+    position: relative;
+}
+
+.footFollow li a {
+    display: block;
+    width: .42rem;
+    margin: 0 auto;
+}
+
+.footFollow li .layer {
+    position: absolute;
+    z-index: 30;
+    left: 50%;
+    right: auto;
+    top: 0.6rem;
+    bottom: auto;
+    background: url("../image/img231.png") center no-repeat;
+    background-size: cover;
+    width: 2.31rem;
+    height: 2.47rem;
+    margin-left: -1.16rem;
+    padding: .33rem .17rem 0 .17rem;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.footFollow li:hover .layer {
+    opacity: 1;
+    visibility: visible;
+    top: .75rem;
+}
+
+
+/*index*/
+
+.indexFlash {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.indexFlash li {
+    height: 10.75rem;
+    background: center top no-repeat;
+    background-size: auto 8.5rem;
+    position: relative;
+}
+
+.indexFlash li .img {
+    width: 3.73rem;
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 50%;
+    top: 3.55rem;
+    bottom: auto;
+    margin-right: -7.65rem;
+}
+
+.indexFlash li .layer {
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 50%;
+    top: 3.55rem;
+    bottom: auto;
+    margin-right: -7.65rem;
+    width: 50%;
+}
+
+.indexFlash li .layer .content,
+.indexFlash li .layer .msg,
+.indexFlash li .layer h2 {
+    float: right;
+}
+
+.indexFlash li .layer .content {
+    font-size: .16rem;
+    line-height: .26rem;
+    max-height: 5.8rem;
+}
+
+.indexFlash li .layer .content div {
+    display: inline;
+    background: #fff;
+    padding: 0 .1rem;
+}
+
+.indexFlash li .layer .msg {
+    font-size: .36rem;
+    line-height: .56rem;
+    margin: 0 .15rem;
+    max-height: 5.8rem;
+}
+
+.indexFlash li .layer .msg div {
+    display: inline;
+    background: #fff;
+    padding: 0 .1rem;
+}
+
+.indexFlash li .layer h2 {
+    background: #624228;
+    color: #fff;
+    text-align: center;
+    font-size: .24rem;
+    line-height: .4rem;
+    letter-spacing: 3px;
+    padding: .2rem .1rem;
+}
+
+.indexFlash li a {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.indexFlash .dots {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: auto;
+    top: auto;
+    bottom: 1.7rem;
+    width: 100%;
+}
+
+.indexFlash .dots span {
+    width: .12rem;
+    height: .12rem;
+    margin: 0 .15rem;
+    background: #cecece;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.indexFlash .dots .swiper-pagination-bullet-active {
+    background: #333;
+}
+
+@media screen and (max-width: 1530px) {
+    .indexFlash li .img {
+        margin-right: -7rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .indexFlash li .layer .content,
+    .indexFlash li .layer .msg,
+    .indexFlash li .layer h2 {
+        writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+        -moz-writing-mode: vertical-rl;
+        writing-mode: tb-rl;
+        -webkit-writing-mode: tb-rl;
+        -moz-writing-mode: tb-rl;
+    }
+}
+
+.indexTitle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: .56rem;
+    width: 1em;
+    line-height: 1em;
+    text-align: center;
+}
+
+.indexTitle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 2.25rem;
+    left: .75rem;
+    top: .7rem;
+    background: #000;
+}
+
+.indexNews {
+    min-height: 5rem;
+    position: relative;
+    z-index: 11;
+    padding: 0 0 .7rem 1.59rem;
+}
+
+.indexNews:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -4.7rem;
+    top: -8.32rem;
+    background: url("../image/img737.png") center no-repeat;
+    background-size: cover;
+    width: 7.37rem;
+    height: 10.63rem;
+}
+
+.indexNews .indexTitle {
+    top: -.5rem;
+}
+
+.indexNews .list li {
+    width: 33.333%;
+    padding: 0 .3rem 0 .5rem;
+    position: relative;
+}
+
+.indexNews .list .time {
+    font-size: .18rem;
+    background: #fff;
+    width: .96rem;
+    line-height: .43rem;
+    height: .45rem;
+    border-top: #000 solid 1px;
+    border-bottom: #000 solid 1px;
+    text-align: center;
+    font-family: 'Candara';
+    position: absolute;
+    z-index: 10;
+    left: 0.45rem;
+    right: auto;
+    top: -0.2rem;
+    bottom: auto;
+}
+
+.indexNews .list .img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.indexNews .list .name {
+    height: 1.67rem;
+    padding-top: .2rem;
+}
+
+.indexNews .list .name a {
+    display: block;
+    font-size: .16rem;
+    line-height: .26rem;
+    height: .52rem;
+    overflow: hidden;
+}
+
+.indexNews .list .tag {
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    font-size: .12rem;
+    line-height: 1.2em;
+    color: #494949;
+    width: 1em;
+}
+
+.indexNews .list li:hover .img img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.indexNews .list2 li {
+    width: 33.333%;
+    padding: 0 .3rem 0 .5rem;
+    position: relative;
+    min-height: 1.89rem;
+}
+
+.indexNews .list2 .tag {
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 0;
+    top: 0.36rem;
+    bottom: auto;
+    font-size: .12rem;
+    line-height: 1.2em;
+    color: #494949;
+    width: 1em;
+}
+
+.indexNews .list2 .name {
+    padding: .33rem .75rem 0 0;
+    border-top: #000 solid 1px;
+}
+
+.indexNews .list2 .name a {
+    display: block;
+    font-size: .18rem;
+    line-height: .3rem;
+    max-height: .9rem;
+    overflow: hidden;
+}
+
+.indexNews .list2 .time {
+    font-family: 'Candara';
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 0.3rem;
+    top: 0.36rem;
+    bottom: auto;
+    text-align: center;
+    font-size: .16rem;
+    line-height: .16rem;
+    font-style: italic;
+}
+
+.indexNews .list2 .time em {
+    font-size: .3rem;
+}
+
+.indexNews .list2 .time div {
+    font-size: .18rem;
+    position: relative;
+    top: -.02rem;
+}
+
+@media screen and (min-width: 750px) {
+    .indexNews .list ul,
+    .indexNews .list2 ul {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        margin-left: -.5rem;
+    }
+}
+
+.indexPart2 {
+    background: url("../image/indexPart2.jpg") center top no-repeat;
+    background-size: auto 8.1rem;
+    padding-top: .85rem;
+}
+
+.indexPart2 .wal {
+    min-height: 8rem;
+    position: relative;
+}
+
+.indexPart2 .list {
+    max-width: 10.62rem;
+    margin: 0 auto;
+    position: relative;
+    padding: .16rem 0 0 0;
+    left: .2rem;
+}
+
+.indexPart2 a.arrow {
+    display: block;
+    width: .95rem;
+    height: 1rem;
+    background: center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: auto;
+    top: 50%;
+    bottom: auto;
+    margin-top: -.75rem;
+}
+
+.indexPart2 a.arrow.prev {
+    left: -.4rem;
+    background-image: url("../image/prev95.png");
+}
+
+.indexPart2 a.arrow.next {
+    right: -.95rem;
+    background-image: url("../image/next95.png");
+}
+
+.indexPart2 .list-wrapper {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.indexPart2 .list-wrapper li {
+    position: relative;
+}
+
+.indexPart2 .list-wrapper li .img {
+    width: 6.01rem;
+    position: relative;
+    z-index: 11;
+    padding: .5rem .3rem .5rem .38rem;
+    /*&:before{@include before(); top: .26rem; right: .3rem; width: 3.47rem; height: .26rem; background: #a41c1c}*/
+}
+
+.indexPart2 .list-wrapper li .img img {
+    box-shadow: 0 0.1rem 0.46rem rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 0.1rem 0.46rem rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0.1rem 0.46rem rgba(0, 0, 0, 0.15);
+}
+
+.indexPart2 .list-wrapper li .box {
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 0;
+    top: 50%;
+    bottom: auto;
+    width: 5.66rem;
+    min-height: 5.24rem;
+    margin-top: -2.62rem;
+    background: url("../image/img566.png") center no-repeat;
+    background-size: cover;
+    padding: .7rem .5rem 0 1.5rem;
+    color: #fff;
+    font-family: 'Noto Serif SC';
+    font-size: .14rem;
+    text-transform: uppercase;
+}
+
+.indexPart2 .list-wrapper li .box .time {
+    font-style: italic;
+    font-size: .16rem;
+}
+
+.indexPart2 .list-wrapper li .box .name {
+    font-size: .24rem;
+    line-height: .3rem;
+    padding: .4rem 0 .65rem 0;
+}
+
+.indexPart2 .list-wrapper li .box p {
+    font-size: .14rem;
+    line-height: .24rem;
+}
+
+.indexPart2 .list-wrapper li .box a {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.indexPart2 .dots {
+    padding-bottom: 1.4rem;
+}
+
+.indexPart2 .dots span {
+    width: .12rem;
+    height: .12rem;
+    margin: 0 .15rem;
+    background: #cecece;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.indexPart2 .dots .swiper-pagination-bullet-active {
+    background: #333;
+}
+
+.indexPart3 {
+    background: url("../image/img1920.png") center top no-repeat;
+    background-size: 100%;
+    min-height: 8rem;
+}
+
+.indexPart3 .indexTitle {
+    position: relative;
+    margin: 0 auto;
+    height: 3.6rem;
+}
+
+.indexPart3 .indexTitle:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 2.25rem;
+    right: .75rem;
+    top: .7rem;
+    background: #000;
+}
+
+.indexPart3 .list {
+    max-width: 12.72rem;
+    margin: 0 auto;
+}
+
+.indexPart3 .list li {
+    width: 33.333%;
+    padding: 0 .31rem;
+}
+
+.indexPart3 .list .img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.indexPart3 .list .box {
+    padding: 0 .27rem .55rem .27rem;
+}
+
+.indexPart3 .list .box .tag {
+    position: relative;
+    padding: .2rem 0 .28rem .24rem;
+    font-size: .14rem;
+}
+
+.indexPart3 .list .box .tag:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -.36rem;
+    width: 2px;
+    height: .73rem;
+    background: #000;
+}
+
+.indexPart3 .list .box .name {
+    font-size: .18rem;
+    line-height: .26rem;
+    padding-bottom: .13rem;
+}
+
+.indexPart3 .list .box p {
+    font-size: .12rem;
+    line-height: .2rem;
+    color: #7d7d7d;
+}
+
+.indexPart3 .list li:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.pageNum {
+    padding: .6rem 0 1.5rem 0;
+    position: relative;
+    max-width: 11.5rem;
+    margin: 0 auto;
+}
+
+.pageNum div a {
+    font-size: .2rem;
+    height: .36rem;
+    line-height: .36rem;
+    width: .36rem;
+    text-align: center;
+    margin: 0 .05rem;
+    -moz-border-radius: 0.06rem;
+    -webkit-border-radius: 0.06rem;
+    border-radius: 0.06rem;
+}
+
+.pageNum div a:hover,
+.pageNum div a.on {
+    background: #000;
+    color: #fff;
+}
+
+.pageNum a.arrow {
+    display: block;
+    width: .57rem;
+    height: .36rem;
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: auto;
+    top: 0.5rem;
+    bottom: auto;
+    background: center no-repeat;
+    background-size: 100%;
+}
+
+.pageNum a.arrow.prev {
+    left: 0;
+    background-image: url("../image/prev57.png");
+}
+
+.pageNum a.arrow.prev:hover {
+    left: -.3rem;
+}
+
+.pageNum a.arrow.next {
+    right: 0;
+    background-image: url("../image/next57.png");
+}
+
+.pageNum a.arrow.next:hover {
+    right: -.3rem;
+}
+
+.pageNum-2 {
+    max-width: 10rem;
+}
+
+.pageTips {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+}
+
+.pageTips .container {
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 630px;
+    margin-left: -3.15rem;
+    margin-top: -160px;
+}
+
+.pageTips .container a.close {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: -15px;
+    top: 40px;
+    bottom: auto;
+    background: url("../image/nimg17.png") center no-repeat;
+}
+
+.pageTips .container .img {
+    text-align: center;
+}
+
+.pageTips .container .msg {
+    font-size: 18px;
+    line-height: 36px;
+    text-align: justify;
+    padding-top: 30px;
+}
+
+.pageTips .container a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.pageBanner {
+    background: url("../image/nimg1940_1.jpg") center no-repeat;
+    background-size: cover;
+    min-height: 2.02rem;
+    text-align: center;
+    position: relative;
+}
+
+.pageBanner:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -.2rem;
+    width: 1px;
+    height: .43rem;
+    background: #000;
+}
+
+.pageBanner .title {
+    font-size: .14rem;
+    color: #595959;
+    padding-top: .55rem;
+}
+
+.pageBanner .title b {
+    padding: 0 .1rem;
+}
+
+.pageBanner .title h2 {
+    font-weight: 100;
+    font-size: .5rem;
+    color: #000;
+}
+
+.pageBanner2 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.pageBanner2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 19.2rem;
+    height: 100%;
+    background: url("../image/nimg1614.jpg") left center no-repeat;
+    background-size: auto 100%;
+    margin-left: -6.45rem;
+}
+
+.pageBanner2 .wal {
+    height: 3.63rem;
+    position: relative;
+}
+
+.pageBanner2 .title {
+    font-size: 1rem;
+    width: 1em;
+    line-height: 1em;
+    color: #000;
+}
+
+.pageBanner2 .list {
+    width: 4rem;
+    font-size: .18rem;
+    line-height: .48rem;
+    padding-left: .3rem;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+    min-height: 2.1rem;
+}
+
+.pageBanner2 .list a {
+    color: #000;
+}
+
+.pageBanner2-2:before {
+    background-image: url("../image/banner1.jpg");
+}
+
+.pageBanner2-3:before {
+    background-image: url("../image/banner2.jpg");
+}
+
+.pageBanner2-4:before {
+    background-image: url("../image/banner3.jpg");
+}
+
+.pageBanner2-5:before {
+    background-image: url("../image/banner4.jpg");
+}
+
+.pageBanner2-6:before {
+    background-image: url("../image/banner5.jpg");
+}
+
+.pageBanner2-7:before {
+    background-image: url("../image/banner6.jpg");
+}
+
+.pageBanner2-8:before {
+    background-image: url("../image/banner7.jpg");
+}
+
+.pageBanner2-9:before {
+    background-image: url("../image/banner8.jpg");
+}
+
+.newsList {
+    padding-top: .7rem;
+    max-width: 10rem;
+}
+
+.newsList li {
+    position: relative;
+    line-height: .97rem;
+    border-bottom: #dcdcdc solid 1px;
+}
+
+.newsList li span {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    font-size: .14rem;
+    color: #494949;
+    font-family: 'Candara';
+}
+
+.newsList li span em {
+    font-size: .24rem;
+}
+
+.newsList li a {
+    display: block;
+    padding-left: 1.32rem;
+    font-size: .18rem;
+}
+
+@media screen and (min-width: 750px) {
+    .newsList li a {
+        height: .97rem;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.pageTitle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: .48rem;
+    width: 1em;
+    line-height: 1em;
+    text-align: center;
+}
+
+.pageTitle:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    left: .7rem;
+    top: 1em;
+    background: #000;
+}
+
+.news_01 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.news_01 .wal {
+    position: relative;
+    min-height: 8.8rem;
+    padding: 1.7rem 0 0 1.6rem;
+}
+
+.news_01 .pageTitle {
+    top: 1.2rem;
+}
+
+.news_01 .list {
+    width: 17.91rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.news_01 .list li {
+    padding-right: .7rem;
+}
+
+.news_01 .list li .img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.news_01 .list li .time {
+    line-height: .6rem;
+    font-size: .2rem;
+    font-family: 'Candara';
+    padding-left: .5rem;
+    position: relative;
+}
+
+.news_01 .list li .time:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: .3rem;
+    top: -.32rem;
+    width: 1px;
+    height: .73rem;
+    background: #000;
+}
+
+.news_01 .list li .name {
+    padding: 0 0 1.1rem .3rem;
+}
+
+.news_01 .list li .name a {
+    display: block;
+    font-size: .2rem;
+    line-height: .3rem;
+    height: .6rem;
+    overflow: hidden;
+}
+
+.news_01 .list li:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.news_01 .arrow {
+    width: 3rem;
+    height: 1.3rem;
+}
+
+.news_01 .arrow a {
+    display: block;
+    width: .95rem;
+    height: .24rem;
+    background: center no-repeat;
+    background-size: 100%;
+}
+
+.news_01 .arrow a.hide {
+    opacity: .2;
+}
+
+.news_01 .arrow a.prev {
+    background-image: url("../image/prev95.png");
+}
+
+.news_01 .arrow a.next {
+    background-image: url("../image/next95.png");
+}
+
+.news_02 {
+    background: url("../image/bg708.jpg") center no-repeat;
+    background-size: auto 100%;
+}
+
+.news_02 .wal {
+    min-height: 7.5rem;
+    position: relative;
+    padding: 1.35rem .95rem 0 1.62rem;
+}
+
+.news_02 .pageTitle {
+    top: .85rem;
+}
+
+.news_02 .list ul {
+    margin-left: -.5rem;
+}
+
+.news_02 .list li {
+    width: 33.333%;
+    padding: 0 0 0 .5rem;
+    position: relative;
+    min-height: 1.9rem;
+}
+
+.news_02 .list .name {
+    padding: .33rem .6rem 0 0;
+    border-top: #000 solid 1px;
+}
+
+.news_02 .list .name a {
+    display: block;
+    font-size: .18rem;
+    line-height: .3rem;
+    max-height: .9rem;
+    overflow: hidden;
+}
+
+.news_02 .list .time {
+    font-family: 'Candara';
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 0;
+    top: 0.36rem;
+    bottom: auto;
+    text-align: center;
+    font-size: .16rem;
+    line-height: .16rem;
+    font-style: italic;
+}
+
+.news_02 .list .time em {
+    font-size: .3rem;
+}
+
+.news_02 .list .time div {
+    font-size: .18rem;
+    position: relative;
+    top: -.02rem;
+}
+
+.pageMore a {
+    display: block;
+    width: 2.39rem;
+    height: .59rem;
+    line-height: .59rem;
+    text-align: center;
+    margin: 0 auto;
+    font-size: .17rem;
+    background: #000;
+    color: #fff;
+}
+
+.news_03 {
+    position: relative;
+    padding: 1.35rem .95rem 0 1.62rem;
+}
+
+.news_03 .pageTitle {
+    top: .85rem;
+}
+
+.news_03 .newsList {
+    max-width: 100%;
+    padding: 0;
+    border-top: #dcdcdc solid 1px;
+}
+
+.news_03 .pageMore {
+    padding: .5rem 0 1.25rem 0;
+}
+
+.about_01 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.about_01 .wal {
+    min-height: 8.8rem;
+    padding: 1.6rem 0 0 1.6rem;
+    z-index: 11;
+    position: relative;
+}
+
+.about_01 .pageTitle {
+    top: 1.2rem;
+}
+
+.about_01 .content {
+    background: #fff;
+    font-size: .17rem;
+    line-height: .32rem;
+    text-align: justify;
+    max-width: 7.95rem;
+    min-height: 5rem;
+    padding: 0 .75rem .7rem 0;
+}
+
+.about_01 .img {
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 50%;
+    top: 2.8rem;
+    bottom: auto;
+    width: 13.06rem;
+    margin-right: -12.8rem;
+}
+
+.pageBox {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: .86rem;
+}
+
+.pageBox:before {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url("../image/img537.jpg") center no-repeat;
+    background-size: cover;
+    width: 20.14rem;
+    height: 5.37rem;
+    left: 50%;
+    bottom: 0;
+    margin-left: -7rem;
+}
+
+.pageBox .wal {
+    min-height: 6.6rem;
+    position: relative;
+}
+
+.pageBox .wal:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    margin-right: -7rem;
+    background: url("../image/img660.jpg") center no-repeat;
+    background-size: cover;
+    width: 19.96rem;
+    height: 100%;
+}
+
+.pageBox-2:before {
+    width: 16.61rem;
+    height: 7.41rem;
+    background-image: url("../image/img741.jpg");
+}
+
+.pageBox-2 .wal {
+    min-height: 7.5rem;
+}
+
+.pageBox-2 .wal:before {
+    background-image: url("../image/img750.jpg");
+    width: 16.99rem;
+}
+
+.pageBox-3:before {
+    width: 16.61rem;
+    height: 7.23rem;
+    background-image: url("../image/img723.jpg");
+}
+
+.pageBox-3 .wal {
+    min-height: 7.56rem;
+}
+
+.pageBox-3 .wal:before {
+    background-image: url("../image/img756.jpg");
+    width: 16.99rem;
+}
+
+.pageBox-4:before {
+    width: 16.61rem;
+    height: 6.75rem;
+    background-image: url("../image/img675.jpg");
+}
+
+.pageBox-4 .wal {
+    min-height: 6.55rem;
+}
+
+.pageBox-4 .wal:before {
+    background-image: url("../image/img655.jpg");
+    width: 16.99rem;
+}
+
+.pageBox-5:before {
+    width: 16.61rem;
+    height: 5.68rem;
+    background-image: url("../image/img568.jpg");
+}
+
+.pageBox-5 .wal {
+    min-height: 5.69rem;
+}
+
+.pageBox-5 .wal:before {
+    background-image: url("../image/img569.jpg");
+    width: 16.99rem;
+}
+
+.about_02 .pageTitle {
+    top: .7rem;
+}
+
+.about_02 .content {
+    position: relative;
+    padding: 1.15rem 1.6rem;
+    font-size: .17rem;
+    line-height: .32rem;
+    text-align: justify;
+}
+
+.about_03 {
+    min-height: 5rem;
+    position: relative;
+    padding: 1.65rem 1.6rem 1.6rem;
+}
+
+.about_03 .pageTitle {
+    top: 1.3rem;
+}
+
+.about_03 .content {
+    font-size: .17rem;
+    line-height: .32rem;
+    text-align: justify;
+}
+
+.about_03 .list {
+    padding: .25rem 0;
+    position: relative;
+}
+
+.about_03 .list:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: .2rem;
+    width: 100%;
+    height: .5rem;
+    background: #fff;
+}
+
+.about_03 .list li {
+    position: relative;
+    padding: .5rem 0 .5rem 1.9rem;
+}
+
+.about_03 .list li:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 1.44rem;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #878787;
+}
+
+.about_03 .list li .time {
+    height: 1.1rem;
+    line-height: 1.1rem;
+    position: absolute;
+    z-index: 10;
+    left: -0.2rem;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    background: #fff;
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #e4e4e4;
+    font-weight: bold;
+}
+
+.about_03 .list li .content {
+    position: relative;
+    z-index: 11;
+}
+
+.communication_01 {
+    background: url("../image/img933.jpg") right center no-repeat;
+    background-size: 9.33rem;
+}
+
+.communication_01 .wal {
+    min-height: 12.8rem;
+    padding: 1.6rem 0 0 1.6rem;
+    z-index: 11;
+    position: relative;
+}
+
+.communication_01 .pageTitle {
+    top: 1.2rem;
+}
+
+.communication_01 .content {
+    font-size: .17rem;
+    line-height: .32rem;
+    text-align: justify;
+    max-width: 8.9rem;
+}
+
+.communication_01 .pageMore {
+    padding: .5rem 0 1rem 0;
+    max-width: 8.9rem;
+}
+
+.communication_02 {
+    position: relative;
+}
+
+.communication_02:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 50%;
+    top: 0;
+    background: url("../image/img1694.jpg") center no-repeat;
+    background-size: cover;
+    width: 16.94rem;
+    height: 5.6rem;
+    margin-right: -7rem;
+}
+
+.communication_02 .wal {
+    min-height: 8rem;
+    position: relative;
+    padding: 1.4rem 0 0 1.6rem;
+}
+
+.communication_02 .pageTitle {
+    top: .95rem;
+}
+
+.communication_02 .list {
+    background: #fff;
+    min-height: 8rem;
+    padding: .75rem 0 0 .25rem;
+}
+
+.communication_02 .list li {
+    width: 33.333%;
+    padding-left: .45rem;
+}
+
+.communication_02 .list .img {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.communication_02 .list .box {
+    padding: 0 .27rem .55rem .27rem;
+}
+
+.communication_02 .list .box .time {
+    position: relative;
+    padding: .2rem 0 .2rem .24rem;
+    font-size: .18rem;
+    font-family: 'Candara';
+}
+
+.communication_02 .list .box .time:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -.36rem;
+    width: 2px;
+    height: .73rem;
+    background: #000;
+}
+
+.communication_02 .list .box .name {
+    font-size: .18rem;
+    line-height: .26rem;
+    padding-bottom: .13rem;
+}
+
+.communication_02 .list .box p {
+    font-size: .12rem;
+    line-height: .2rem;
+    color: #7d7d7d;
+}
+
+.communication_02 .list li:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.teaching_01 {
+    position: relative;
+    min-height: 5rem;
+    padding: .9rem 0 0 1.6rem;
+}
+
+.teaching_01 .pageTitle {
+    top: 1.2rem;
+}
+
+.teaching_01 .title {
+    position: relative;
+    padding-top: .7rem;
+}
+
+.teaching_01 .title h2 {
+    font-weight: 400;
+    font-size: .3rem;
+    position: relative;
+}
+
+.teaching_01 .title h2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .08rem;
+    background: #eef1f7;
+}
+
+.teaching_01 .title h2 em {
+    display: inline-block;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.teaching_01 .title2,
+.teaching_01 .list li {
+    font-size: .18rem;
+}
+
+.teaching_01 .title2 .col-1,
+.teaching_01 .list li .col-1 {
+    width: 15%;
+}
+
+.teaching_01 .title2 .col-2,
+.teaching_01 .list li .col-2 {
+    width: 26%;
+}
+
+.teaching_01 .title2 .col-3,
+.teaching_01 .list li .col-3 {
+    width: 9%;
+}
+
+.teaching_01 .title2 .col-4,
+.teaching_01 .list li .col-4 {
+    width: 23%;
+}
+
+.teaching_01 .title2 .col-5,
+.teaching_01 .list li .col-5 {
+    width: 37%;
+}
+
+.teaching_01 .title2 {
+    padding: .26rem 0 .16rem 0;
+    border-bottom: #000 solid 1px;
+    color: #857c7c;
+}
+
+.teaching_01 .list {
+    padding: .1rem 0;
+    border-bottom: #e5e5e5 solid 1px;
+}
+
+.teaching_01 .list li {
+    min-height: .3rem;
+    padding: .15rem 0;
+}
+
+.teaching_01 .list li .col-2 {
+    padding-right: .55rem;
+}
+
+.teaching_01 .list li .col-5 {
+    color: #9b9b9b;
+}
+
+.teaching_02 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.teaching_02 .imgList {
+    position: absolute;
+    left: 50%;
+    top: 1.6rem;
+    width: 14.98rem;
+    overflow: hidden;
+    margin-left: -5.4rem;
+}
+
+.teaching_02 .imgList li {
+    height: 5.6rem;
+    background: center no-repeat;
+    background-size: cover;
+}
+
+.teaching_02 .wal {
+    position: relative;
+    z-index: 11;
+    min-height: 5rem;
+    padding: 5.65rem 0 1rem 1.6rem;
+}
+
+.teaching_02 .pageTitle {
+    top: 1.1rem;
+}
+
+.teaching_02 .content {
+    background: #fff;
+    font-size: .17rem;
+    line-height: .32rem;
+    text-align: justify;
+    padding: .55rem .95rem .75rem 0;
+}
+
+.teaching_02 .list li {
+    min-height: 2.77rem;
+    position: relative;
+    border-top: #dedede solid 1px;
+    padding: .32rem 4.2rem .32rem 0;
+}
+
+.teaching_02 .list .img {
+    width: 3.5rem;
+    position: absolute;
+    z-index: 10;
+    left: auto;
+    right: 0;
+    top: -0.34rem;
+    bottom: auto;
+    overflow: hidden;
+}
+
+.teaching_02 .list .img:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.teaching_02 .list .name {
+    font-size: .22rem;
+    padding-bottom: .15rem;
+}
+
+.teaching_02 .list .msg {
+    font-size: .14rem;
+    line-height: .26rem;
+    font-family: "Microsoft YaHei";
+}
+
+.teaching_03 {
+    padding: 1.35rem .9rem 0 1.6rem;
+    position: relative;
+    min-height: 7.5rem;
+}
+
+.teaching_03 .pageTitle {
+    top: .85rem;
+}
+
+.teaching_03 .newsList {
+    max-width: 100%;
+    border-top: #dcdcdc solid 1px;
+    padding: 0;
+}
+
+.teaching_03 .newsList li {
+    line-height: .83rem;
+}
+
+.teaching_03 .newsList li a {
+    height: .83rem;
+}
+
+.teaching_03 .pageMore {
+    padding: .5rem 0;
+}
+
+.research_01 {
+    background: url("../image/img1035.jpg") right bottom no-repeat;
+    background-size: 10.35rem;
+}
+
+.research_01 .wal {
+    min-height: 10rem;
+    position: relative;
+    padding: 1.6rem 0 1.3rem 1.6rem;
+}
+
+.research_01 .pageTitle {
+    top: 1.2rem;
+}
+
+.research_01 .content {
+    max-width: 9rem;
+    font-size: .17rem;
+    line-height: .32rem;
+    text-align: justify;
+}
+
+.research_02 {
+    min-height: 5rem;
+    position: relative;
+    padding: 0 0 1.5rem 1.6rem;
+}
+
+.links .title,
+.research_02 .title {
+    position: relative;
+    padding-top: .4rem;
+}
+
+.links .title h2,
+.research_02 .title h2 {
+    font-weight: 400;
+    font-size: .3rem;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.links .title h2:before,
+.research_02 .title h2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .08rem;
+    background: #eef1f7;
+}
+
+.links .title h2 em,
+.research_02 .title h2 em {
+    display: inline-block;
+    position: relative;
+    padding-bottom: .02rem;
+}
+
+.links .list,
+.research_02 .list {
+    margin-top: .28rem;
+    border-top: #000 solid 1px;
+}
+
+.links .list li,
+.research_02 .list li {
+    border-bottom: #dedede solid 1px;
+}
+
+.links .list a,
+.research_02 .list a {
+    display: block;
+    font-size: .18rem;
+    padding-right: 1rem;
+    position: relative;
+}
+
+.links .list a:before,
+.research_02 .list a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: .12rem;
+    height: 100%;
+    background: url("../image/next57.png") right center no-repeat;
+    width: .57rem;
+    background-size: 100%;
+}
+
+.links .list a:hover:before,
+.research_02 .list a:hover:before {
+    right: 0;
+}
+
+@media screen and (min-width: 750px) {
+    .links .list a,
+    .research_02 .list a {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        height: .81rem;
+        line-height: .81rem;
+    }
+}
+
+.links {
+    padding: .65rem 0 1.1rem 0;
+}
+
+.links .title {
+    padding-top: .55rem;
+}
+
+.character {
+    min-height: 5rem;
+    position: relative;
+    padding-left: 1.6rem;
+}
+
+.character .tab {
+    border-bottom: #000 solid 1px;
+}
+
+.character .tab li {
+    position: relative;
+    height: 1.1rem;
+    font-style: italic;
+    color: #8a8a8a;
+    font-size: .14rem;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    margin-right: 1.15rem;
+}
+
+.character .tab li h2 {
+    font-weight: 400;
+    font-size: .24rem;
+    padding-bottom: .33rem;
+    position: relative;
+}
+
+.character .tab li h2 em {
+    display: inline-block;
+    position: relative;
+    padding-bottom: .02rem;
+}
+
+.character .tab li.on {
+    color: #000;
+    font-style: normal;
+}
+
+.character .tab li.on h2 {
+    font-size: .3rem;
+}
+
+.character .tab li.on h2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: .33rem;
+    width: 100%;
+    height: .08rem;
+    background: #f2f1fb;
+}
+
+.character .tab li.on h2:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -.1rem;
+    width: 1px;
+    height: .3rem;
+    background: #000;
+}
+
+.character .list {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.character .list ul {
+    margin-right: -.3rem;
+    margin-bottom: .5rem;
+}
+
+.character .list ul:last-child {
+    margin-bottom: 0;
+}
+
+.character .list li {
+    width: 25%;
+    min-height: 1.76rem;
+    padding: 0 .3rem .3rem 1.32rem;
+    position: relative;
+}
+
+.character .list .img {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: auto;
+    top: 0;
+    bottom: auto;
+    width: 1rem;
+}
+
+.character .list .img:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: .1rem;
+    top: .1rem;
+    background: #f2f1fb;
+    width: 100%;
+    height: 100%;
+}
+
+.character .list .img a {
+    display: block;
+    position: relative;
+}
+
+.character .list .name a {
+    display: block;
+    color: #878787;
+    font-size: .14rem;
+    line-height: .28rem;
+    padding: .1rem 0;
+}
+
+.character .list .name a div {
+    font-size: .24rem;
+    color: #000;
+}
+
+.character .list .info a {
+    font-size: .12rem;
+    color: #878787;
+    text-decoration: underline;
+}
+
+.characterShow_01 {
+    background: url("../image/characterShow_01.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.characterShow_01 .wal {
+    min-height: 3.5rem;
+    position: relative;
+    max-width: 10rem;
+    padding: 1rem 0 0 3.15rem;
+}
+
+.characterShow_01 .wal:before {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -.22rem;
+    height: .44rem;
+    width: 1px;
+    background: #000;
+}
+
+.characterShow_01 .img {
+    width: 2.5rem;
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: auto;
+    top: 0.9rem;
+    bottom: auto;
+}
+
+.characterShow_01 .img img {
+    position: relative;
+}
+
+.characterShow_01 .img:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -.2rem;
+    right: -.2rem;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.characterShow_01 .info,
+.characterShow_01 .msg {
+    font-family: "Microsoft YaHei";
+    font-size: .14rem;
+    color: #646464;
+}
+
+.characterShow_01 .info a,
+.characterShow_01 .msg a {
+    color: #646464;
+}
+
+.characterShow_01 .info b {
+    padding: 0 .1rem;
+}
+
+.characterShow_01 .name {
+    font-size: .5rem;
+    padding-bottom: .2rem;
+    color: #000;
+}
+
+.characterShow_01 .msg {
+    line-height: .28rem;
+}
+
+.characterShow {
+    padding: 1.3rem 0;
+    max-width: 10rem;
+}
+
+.characterShow .title {
+    height: .65rem;
+}
+
+.characterShow .title h2 {
+    padding-right: .32rem;
+    font-size: .16rem;
+    font-weight: 400;
+    color: #666;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+}
+
+.characterShow .title:after {
+    content: "";
+    display: block;
+    position: absolute;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: #c2c2c2;
+}
+
+.characterShow .content {
+    font-size: .18rem;
+    line-height: .32rem;
+    color: #000;
+    padding-bottom: .2rem;
+}
+
+.xishuo_01 {
+    background: url("../image/img1375.jpg") right bottom no-repeat;
+    background-size: 13.75rem;
+}
+
+.xishuo_01 .wal {
+    position: relative;
+    min-height: 5.85rem;
+    padding: 1.6rem 1.1rem 1.1rem 1.6rem;
+}
+
+.xishuo_01 .pageTitle {
+    top: 1.2rem;
+}
+
+.xishuo_01 .content {
+    font-size: .17rem;
+    line-height: .32rem;
+    text-align: justify;
+}
+
+.xishuo_02 {
+    background-image: url("../image/img1375_2.jpg");
+}
+
+.xishuo_02 .wal {
+    min-height: 6.9rem;
+    padding-top: 1.5rem;
+}
+
+.xishuo_02 .pageTitle {
+    top: 1.1rem;
+}
+
+.xishuo_03 {
+    padding: 1.25rem 1.1rem 1.1rem 1.6rem;
+}
+
+.xishuo_03 .pageTitle {
+    top: .9rem;
+}
+
+.xishuo_03 .content {
+    position: relative;
+    font-size: .17rem;
+    line-height: .32rem;
+    text-align: justify;
+}
+
+.pageShow_01 {
+    background: url("../image/characterShow_01.jpg") center no-repeat;
+}
+
+.pageShow_01 .wal {
+    min-height: 3rem;
+    text-align: center;
+    max-width: 11.25rem;
+    position: relative;
+}
+
+.pageShow_01 .wal:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: -.22rem;
+    width: 1px;
+    height: .44rem;
+    background: #000;
+}
+
+.pageShow_01 .info {
+    font-size: .14rem;
+    color: #595959;
+    font-family: "Microsoft YaHei";
+    padding: .55rem 0 .1rem 0;
+}
+
+.pageShow_01 .info a {
+    color: #595959;
+}
+
+.pageShow_01 .info b {
+    padding: 0 .1rem;
+}
+
+.pageShow_01 .name {
+    font-size: .5rem;
+    line-height: .6rem;
+}
+
+.pageShow_01 .time {
+    font-family: 'Candara';
+    padding: .35rem 0 .4rem 0;
+    font-size: .14rem;
+}
+
+.pageShow_01 .time span {
+    font-size: .24rem;
+}
+
+.pageShow {
+    max-width: 10rem;
+    padding: 1.2rem 0;
+    font-size: .18rem;
+    line-height: .3rem;
+    text-align: justify;
+}
+
+.pageShow p {
+    margin: .75em 0;
+    text-indent: 2em;
+}
+
+.pageShow .img {
+    text-align: center;
+    padding: .2rem 0;
+}
+
+.pageShow .img span {
+    padding-top: .12rem;
+    font-size: .12rem;
+    color: #666;
+    display: block;
+}
+
+.recruit {
+    padding: .5rem 0 1.6rem 0;
+}
+
+.recruit .title {
+    padding: .6rem 0 .25rem 0;
+    border-bottom: #000 solid 1px;
+}
+
+.recruit .title h2 {
+    position: relative;
+    font-weight: 400;
+    font-size: .4rem;
+}
+
+.recruit .title h2:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: .08rem;
+    background: #e7f5e7;
+}
+
+.recruit .title h2 em {
+    display: inline-block;
+    position: relative;
+}
+
+.recruit .list li {
+    border-bottom: #dedede solid 1px;
+}
+
+.recruit .list li .name {
+    line-height: .8rem;
+    position: relative;
+    font-size: .18rem;
+    padding-left: .05rem;
+    cursor: pointer;
+}
+
+.recruit .list li .name:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: .2rem;
+    width: .26rem;
+    height: 100%;
+    background: url("../image/nimg26.png") center no-repeat;
+    background-size: 100%;
+}
+
+.recruit .list li .name:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 0;
+    background: #f0fbef;
+    opacity: 0;
+}
+
+.recruit .list li .content {
+    font-size: .16rem;
+    line-height: .28rem;
+    color: #666;
+    text-align: justify;
+    background: #fff;
+    font-family: "Microsoft YaHei";
+    padding: .4rem .65rem .65rem;
+    display: none;
+    margin: 0 .4rem;
+    position: relative;
+}
+
+.recruit .list li.on .name {
+    font-size: .22rem;
+    background: #f0fbef;
+    padding: 0 .4rem;
+}
+
+.recruit .list li.on .name:after {
+    height: .55rem;
+    opacity: 1;
+}
+
+.recruit .list li.on .name:before {
+    background-image: url("../image/img26.png");
+    right: .4rem;
+}
+
+.recruit-2 {
+    padding: .28rem 0 0 1.6rem;
+}
+
+.recruit-2 .list {
+    border-top: #000 solid 1px;
+}
+
+.recruit-2 .list li .name:after {
+    background: #eef1f7;
+}
+
+.recruit-2 .list li.on .name {
+    background: #eef1f7;
+}
+
+
+/*# sourceMappingURL=index.css.map */

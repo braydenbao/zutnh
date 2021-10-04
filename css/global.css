@@ -1,0 +1,189 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.head {
+    height: 120px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.head .logo {
+    float: left;
+}
+
+.head .logo img {
+    width: 550px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.head .nav {
+    float: right;
+    margin-right: 30px;
+}
+
+.head .nav ul {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.head .nav ul li {
+    float: left;
+    margin-left: 5px;
+}
+
+.head .nav ul li a {
+    display: block;
+    position: relative;
+    padding: 40px 0px 30px 30px;
+    color: #000;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.head .nav ul li a:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: .03rem;
+    background: #000;
+}
+
+.head .nav ul li a:hover:before,
+.head .nav ul li a.on:before {
+    height: 2px;
+    left: auto;
+    width: 40px;
+}
+
+.follow {
+    height: 100px;
+    width: 300px;
+    margin: auto;
+}
+
+.follow .text {
+    text-align: center;
+    font-size: 20px;
+}
+
+.follow .icon {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.follow .icon img {
+    width: 35px;
+    margin: 10px;
+}
+
+.foot {
+    width: 100%;
+    height: 600px;
+    background: url("../images/3b98blnle2.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.foot .wal {
+    width: 100%;
+    height: 600px;
+}
+
+.foot .wal .info {
+    float: left;
+    width: 200px;
+    height: 600px;
+}
+
+.foot .wal .info .flag {
+    padding: 100px 0 50px 50px;
+}
+
+.foot .wal .info .flag a img {
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+.foot .wal .box {
+    margin-top: 10px;
+    margin-left: 60px;
+    width: 400px;
+    color: #fff;
+}
+
+.foot .wal .box .content {
+    line-height: 2em;
+}
+
+.foot .wal .box h5 {
+    margin: 20px 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.foot .wal .list {
+    float: right;
+    width: 900px;
+    height: auto;
+    margin-top: 100px;
+}
+
+.foot .wal .list ul {
+    list-style: none;
+}
+
+.foot .wal .list ul li {
+    width: 30%;
+    padding-bottom: 40px;
+    line-height: 1.5em;
+    display: inline-block;
+    vertical-align: text-top;
+}
+
+.foot .wal .list ul li h5 {
+    float: left;
+    width: 100px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.foot .wal .list ul li dl {
+    float: left;
+    margin-bottom: 10px;
+}
+
+.foot .wal .list ul li dd {
+    font-size: 13px;
+}
+
+.foot .wal .list ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.foot .msg {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+}
+
+.foot .msg .txt {
+    font-size: 15px;
+    color: gray;
+    margin-left: 30px;
+    padding-top: 30px;
+}
